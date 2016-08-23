@@ -33,7 +33,7 @@ uint8 maxTemp = 70;
 uint8 voltage = 36;
 uint8 minVotage = 30;
 
-int seta_dc(int d_cycle)		//função para definição do Duty Cicle do PWM
+void seta_dc(int d_cycle)		//função para definição do Duty Cicle do PWM
 {
 	dcReq = d_cycle;
 	dc = dcReq;
@@ -42,30 +42,30 @@ int seta_dc(int d_cycle)		//função para definição do Duty Cicle do PWM
 	else
 		if(dc > maxDC)			//Comparação com o valor máximo de Duty Cicle
 			dc = 100;
-	timer1SetCompareBValue((dc * (timer1GetCompareAValue()))/100);//bota o dc
-	return 0;
+	timer1SetCompareBValue((dc * (timer1GetCompareAValue()))/100);//set o valor do comparador B para gerar o DC requerido
 }
 
 int main(void)
 {
 	clrBit(DDRC,POT_BIT);	//SETA O PINO DO ADC COMO ENTRADA
-	adcConfig(ADC_MODE_AUTO_TIMER1_COMPB, ADC_REFERENCE_POWER_SUPPLY , ADC_PRESCALER_128);
+	adcConfig(ADC_MODE_SINGLE_CONVERSION, ADC_REFERENCE_POWER_SUPPLY , ADC_PRESCALER_128);
 	adcSelectChannel(POT_CHANNEL);
 	adcClearInterruptRequest();
 	adcActivateInterrupt();
 	adcEnable();
+	adcStartConversion();
 	
 	timer1Config(TIMER_B_MODE_CTC, TIMER_A_PRESCALER_1024);
 	timer1ClearCompareBInterruptRequest();									
 	timer1ClearCompareAInterruptRequest();
-	timer1ActivateCompareBInterrupt();										//ativa a interrupcao do compA
-	timer1ActivateCompareAInterrupt();
-	timer1SetCompareAValue((F_CPU/2)/freq);							//valor do comparador A,  define a frequencia
-	timer1SetCompareBValue((dc * (timer1GetCompareAValue()))/100);		//bota o dc
+	timer1ActivateCompareBInterrupt();									//ativa a interrupcao do compA
+	timer1ActivateCompareAInterrupt();									//ativa a interrupcao do compB
+	timer1SetCompareAValue((F_CPU/2)/freq);								//valor do comparador A,  define a frequencia
+	timer1SetCompareBValue((dc * (timer1GetCompareAValue()))/100);		//valor do comparador B,  define Duty Cicle
 	
 	sei();
 	
-	setBit(PWM_DDR,PWM_BIT);
+	setBit(PWM_DDR,PWM_BIT);		//define o pino do pwm como saída
 	
     while(1)
     {
@@ -74,13 +74,14 @@ int main(void)
 }
 
 ISR(ADC_vect){
-	seta_dc(ADC*100/1023);
+	seta_dc(ADC*100/1023);			//definição do Duty Cicle do PWM
+	adcStartConversion();
 }
 
 ISR(TIMER1_COMPA_vect){
-	setBit(PWM_PORT,PWM_BIT);
+	setBit(PWM_PORT,PWM_BIT);		//Inicia o período em nível baixo do PWM
 }
 
 ISR(TIMER1_COMPB_vect){
-	clrBit(PWM_PORT,PWM_BIT);
+	clrBit(PWM_PORT,PWM_BIT);		//Inicia o período em nível baixo do PWM
 }
