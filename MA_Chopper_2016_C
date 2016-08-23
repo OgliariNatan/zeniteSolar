@@ -1,0 +1,86 @@
+/*
+ * Chopper_MPDC_2016.c
+ *
+ * Created: 18/8/2016 13:25:59
+ *  Author: Augusto D. Rodrigues
+ *	Equipe Zênite Solar - Projeto Chopper MPDC 2016
+ */ 
+
+#include <avr/io.h>
+#include "ATmega328.h"
+#include "globalDefines.h"
+
+#define  F_CPU 16000000UL
+#define POT_CHANNEL ADC_CHANNEL_1		
+#define POT_BIT PC1
+#define PWM_DDR DDRB
+#define PWM_PORT PORTB
+#define PWM_BIT PB1
+
+
+uint16 freq = 500;
+uint8 current = 80;
+uint8 maxCurrent = 100;
+uint8 minDC = 40;
+uint8 dc = 50;
+uint8 dcReq = 0;				//armazena o valor do dc requisitado
+uint8 maxDC = 60;
+uint8 maxDV = 10;
+uint8 on = 1;					//false
+uint8 DMS = 1;					//false
+uint8 temperature = 50;
+uint8 maxTemp = 70;
+uint8 voltage = 36;
+uint8 minVotage = 30;
+
+int seta_dc(int d_cycle)		//função para definição do Duty Cicle do PWM
+{
+	dcReq = d_cycle;
+	dc = dcReq;
+	if(dc < minDC)				// Comparação com o valor mínimo de Duty Cicle
+		dc = 0;
+	else
+		if(dc > maxDC)			//Comparação com o valor máximo de Duty Cicle
+			dc = 100;
+	timer1SetCompareBValue((dc * (timer1GetCompareAValue()))/100);//bota o dc
+	return 0;
+}
+
+int main(void)
+{
+	clrBit(DDRC,POT_BIT);	//SETA O PINO DO ADC COMO ENTRADA
+	adcConfig(ADC_MODE_AUTO_TIMER1_COMPB, ADC_REFERENCE_POWER_SUPPLY , ADC_PRESCALER_128);
+	adcSelectChannel(POT_CHANNEL);
+	adcClearInterruptRequest();
+	adcActivateInterrupt();
+	adcEnable();
+	
+	timer1Config(TIMER_B_MODE_CTC, TIMER_A_PRESCALER_1024);
+	timer1ClearCompareBInterruptRequest();									
+	timer1ClearCompareAInterruptRequest();
+	timer1ActivateCompareBInterrupt();										//ativa a interrupcao do compA
+	timer1ActivateCompareAInterrupt();
+	timer1SetCompareAValue((F_CPU/2)/freq);							//valor do comparador A,  define a frequencia
+	timer1SetCompareBValue((dc * (timer1GetCompareAValue()))/100);		//bota o dc
+	
+	sei();
+	
+	setBit(PWM_DDR,PWM_BIT);
+	
+    while(1)
+    {
+       
+    }
+}
+
+ISR(ADC_vect){
+	seta_dc(ADC*100/1023);
+}
+
+ISR(TIMER1_COMPA_vect){
+	setBit(PWM_PORT,PWM_BIT);
+}
+
+ISR(TIMER1_COMPB_vect){
+	clrBit(PWM_PORT,PWM_BIT);
+}
