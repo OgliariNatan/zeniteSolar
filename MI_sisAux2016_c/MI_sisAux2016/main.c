@@ -56,7 +56,7 @@ int main(void)
 	
 	can_t msg;		//!Cria o pacote a ser enviado.
 	
-	msg.id = 0x000;
+	msg.id = 0x123;
 	//msg.flags.rtr = 0;
 	
 	msg.length = 5;			//!Define o tamanho do pacote a ser enviado.
@@ -97,7 +97,7 @@ int main(void)
 		msg.data[3] =   estados.estAux1;
 		msg.data[4] =   estados.estAux2; 
 		 
-	    can_send_message(&msg);		//!Envia um o pacote
+	   can_send_message(&msg);		//!Envia um o pacote
 		 
 		//!Check if a new messag was received
 		if (can_check_message())
