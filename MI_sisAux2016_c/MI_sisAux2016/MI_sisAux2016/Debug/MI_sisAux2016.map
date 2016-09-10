@@ -1,0 +1,1059 @@
+Archive member included to satisfy reference by file (symbol)
+
+C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515.o)
+                              main.o (can_init)
+C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_buffer.o)
+                              main.o (can_check_message)
+C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_get_message.o)
+                              main.o (can_get_message)
+C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_send_message.o)
+                              main.o (can_send_message)
+C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_static_filter.o)
+                              main.o (can_static_filter)
+C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_write_id.o)
+                              C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_send_message.o) (mcp2515_write_id)
+C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_read_id.o)
+                              C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_get_message.o) (mcp2515_read_id)
+C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(spi.o)
+                              C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515.o) (mcp2515_spi_init)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodsi4.o)
+                              ATmega328.o (__udivmodsi4)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+                              C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.0.106/gcc/dev/atmega328p/avr5/crtatmega328p.o (exit)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_tablejump2.o)
+                              ATmega328.o (__tablejump2__)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+                              ATmega328.o (__do_copy_data)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+                              ATmega328.o (__do_clear_bss)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_ashrdi3.o)
+                              ATmega328.o (__lshrdi3)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(iob.o)
+                              ATmega328.o (__iob)
+
+Allocating common symbols
+Common symbol       size              file
+
+estados             0x1               main.o
+usartReceiverBuffer
+                    0x32              ATmega328.o
+usartReceiverBufferNextWrite
+                    0x1               ATmega328.o
+usartReceiverBufferLength
+                    0x1               ATmega328.o
+usartReceiverBufferNextRead
+                    0x1               ATmega328.o
+__iob               0x6               c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(iob.o)
+
+Discarded input sections
+
+ .data          0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.0.106/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .bss           0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.0.106/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .text          0x00000000        0x0 ATmega328.o
+ .data          0x00000000        0x0 ATmega328.o
+ .bss           0x00000000        0x0 ATmega328.o
+ .text.usartReceiveStd
+                0x00000000       0x12 ATmega328.o
+ .text.globalInterruptEnable
+                0x00000000        0x4 ATmega328.o
+ .text.globalInterruptDisable
+                0x00000000        0x4 ATmega328.o
+ .text.systemClockSetPrescaler
+                0x00000000       0x4c ATmega328.o
+ .progmem.gcc_sw_table.systemClockSetPrescaler
+                0x00000000       0x12 ATmega328.o
+ .text.eepromSetOperationMode
+                0x00000000       0x12 ATmega328.o
+ .text.eepromReadyActivateInterrupt
+                0x00000000        0x4 ATmega328.o
+ .text.eepromReadyDeactivateInterrupt
+                0x00000000        0x4 ATmega328.o
+ .text.eepromWrite
+                0x00000000       0x1a ATmega328.o
+ .text.eepromRead
+                0x00000000       0x10 ATmega328.o
+ .text.globalPullUpEnable
+                0x00000000        0x8 ATmega328.o
+ .text.pullUpDisable
+                0x00000000        0x8 ATmega328.o
+ .text.int0Config
+                0x00000000       0x72 ATmega328.o
+ .text.int0ActivateInterrupt
+                0x00000000        0x4 ATmega328.o
+ .text.int0DeactivateInterrupt
+                0x00000000        0x4 ATmega328.o
+ .text.int0ClearInterruptRequest
+                0x00000000        0x4 ATmega328.o
+ .text.int1Config
+                0x00000000       0x72 ATmega328.o
+ .text.int1ActivateInterrupt
+                0x00000000        0x4 ATmega328.o
+ .text.int1DeactivateInterrupt
+                0x00000000        0x4 ATmega328.o
+ .text.int1ClearInterruptRequest
+                0x00000000        0x4 ATmega328.o
+ .text.pcint7_0Enable
+                0x00000000        0xc ATmega328.o
+ .text.pcint7_0Disable
+                0x00000000        0xc ATmega328.o
+ .text.pcint7_0ClearInterruptRequest
+                0x00000000        0x4 ATmega328.o
+ .text.pcint0ActivateInterrupt
+                0x00000000       0x42 ATmega328.o
+ .text.pcint0DeactivateInterrupt
+                0x00000000        0xc ATmega328.o
+ .text.pcint1ActivateInterrupt
+                0x00000000       0x42 ATmega328.o
+ .text.pcint1DeactivateInterrupt
+                0x00000000        0xc ATmega328.o
+ .text.pcint2ActivateInterrupt
+                0x00000000       0x42 ATmega328.o
+ .text.pcint2DeactivateInterrupt
+                0x00000000        0xc ATmega328.o
+ .text.pcint3ActivateInterrupt
+                0x00000000       0x42 ATmega328.o
+ .text.pcint3DeactivateInterrupt
+                0x00000000        0xc ATmega328.o
+ .text.pcint4ActivateInterrupt
+                0x00000000       0x42 ATmega328.o
+ .text.pcint4DeactivateInterrupt
+                0x00000000        0xc ATmega328.o
+ .text.pcint5ActivateInterrupt
+                0x00000000       0x42 ATmega328.o
+ .text.pcint5DeactivateInterrupt
+                0x00000000        0xc ATmega328.o
+ .text.pcint6ActivateInterrupt
+                0x00000000       0x42 ATmega328.o
+ .text.pcint6DeactivateInterrupt
+                0x00000000        0xc ATmega328.o
+ .text.pcint7ActivateInterrupt
+                0x00000000       0x42 ATmega328.o
+ .text.pcint7DeactivateInterrupt
+                0x00000000        0xc ATmega328.o
+ .text.pcint14_8Enable
+                0x00000000        0xc ATmega328.o
+ .text.pcint14_8Disable
+                0x00000000        0xc ATmega328.o
+ .text.pcint14_8ClearInterruptRequest
+                0x00000000        0x4 ATmega328.o
+ .text.pcint8ActivateInterrupt
+                0x00000000       0x42 ATmega328.o
+ .text.pcint8DeactivateInterrupt
+                0x00000000        0xc ATmega328.o
+ .text.pcint9ActivateInterrupt
+                0x00000000       0x42 ATmega328.o
+ .text.pcint9DeactivateInterrupt
+                0x00000000        0xc ATmega328.o
+ .text.pcint10ActivateInterrupt
+                0x00000000       0x42 ATmega328.o
+ .text.pcint10DeactivateInterrupt
+                0x00000000        0xc ATmega328.o
+ .text.pcint11ActivateInterrupt
+                0x00000000       0x42 ATmega328.o
+ .text.pcint11DeactivateInterrupt
+                0x00000000        0xc ATmega328.o
+ .text.pcint12ActivateInterrupt
+                0x00000000       0x42 ATmega328.o
+ .text.pcint12DeactivateInterrupt
+                0x00000000        0xc ATmega328.o
+ .text.pcint13ActivateInterrupt
+                0x00000000       0x42 ATmega328.o
+ .text.pcint13DeactivateInterrupt
+                0x00000000        0xc ATmega328.o
+ .text.pcint14ActivateInterrupt
+                0x00000000       0x42 ATmega328.o
+ .text.pcint14DeactivateInterrupt
+                0x00000000        0xc ATmega328.o
+ .text.pcint23_16Enable
+                0x00000000        0xc ATmega328.o
+ .text.pcint23_16Disable
+                0x00000000        0xc ATmega328.o
+ .text.pcint23_16ClearInterruptRequest
+                0x00000000        0x4 ATmega328.o
+ .text.pcint16ActivateInterrupt
+                0x00000000       0x42 ATmega328.o
+ .text.pcint16DeactivateInterrupt
+                0x00000000        0xc ATmega328.o
+ .text.pcint17ActivateInterrupt
+                0x00000000       0x42 ATmega328.o
+ .text.pcint17DeactivateInterrupt
+                0x00000000        0xc ATmega328.o
+ .text.pcint18ActivateInterrupt
+                0x00000000       0x42 ATmega328.o
+ .text.pcint18DeactivateInterrupt
+                0x00000000        0xc ATmega328.o
+ .text.pcint19ActivateInterrupt
+                0x00000000       0x42 ATmega328.o
+ .text.pcint19DeactivateInterrupt
+                0x00000000        0xc ATmega328.o
+ .text.pcint20ActivateInterrupt
+                0x00000000       0x42 ATmega328.o
+ .text.pcint20DeactivateInterrupt
+                0x00000000        0xc ATmega328.o
+ .text.pcint21ActivateInterrupt
+                0x00000000       0x42 ATmega328.o
+ .text.pcint21DeactivateInterrupt
+                0x00000000        0xc ATmega328.o
+ .text.pcint22ActivateInterrupt
+                0x00000000       0x42 ATmega328.o
+ .text.pcint22DeactivateInterrupt
+                0x00000000        0xc ATmega328.o
+ .text.pcint23ActivateInterrupt
+                0x00000000       0x42 ATmega328.o
+ .text.pcint23DeactivateInterrupt
+                0x00000000        0xc ATmega328.o
+ .text.timer0Config
+                0x00000000       0x94 ATmega328.o
+ .text.timer0OutputConfig
+                0x00000000       0x8e ATmega328.o
+ .text.timer0ActivateOverflowInterrupt
+                0x00000000        0xc ATmega328.o
+ .text.timer0DeactivateOverflowInterrupt
+                0x00000000        0xc ATmega328.o
+ .text.timer0ClearOverflowInterruptRequest
+                0x00000000        0x4 ATmega328.o
+ .text.timer0ActivateCompareAInterrupt
+                0x00000000        0xc ATmega328.o
+ .text.timer0DeactivateCompareAInterrupt
+                0x00000000        0xc ATmega328.o
+ .text.timer0ClearCompareAInterruptRequest
+                0x00000000        0x4 ATmega328.o
+ .text.timer0ActivateCompareBInterrupt
+                0x00000000        0xc ATmega328.o
+ .text.timer0DeactivateCompareBInterrupt
+                0x00000000        0xc ATmega328.o
+ .text.timer0ClearCompareBInterruptRequest
+                0x00000000        0x4 ATmega328.o
+ .text.timer0ForceCompareA
+                0x00000000        0x8 ATmega328.o
+ .text.timer0ForceCompareB
+                0x00000000        0x8 ATmega328.o
+ .text.timer0SetCounterValue
+                0x00000000        0x4 ATmega328.o
+ .text.timer0GetCounterValue
+                0x00000000        0x4 ATmega328.o
+ .text.timer0SetCompareAValue
+                0x00000000        0x4 ATmega328.o
+ .text.timer0GetCompareAValue
+                0x00000000        0x4 ATmega328.o
+ .text.timer0SetCompareBValue
+                0x00000000        0x4 ATmega328.o
+ .text.timer0GetCompareBValue
+                0x00000000        0x4 ATmega328.o
+ .text.timer1Config
+                0x00000000       0x3a ATmega328.o
+ .text.timer1OutputConfig
+                0x00000000       0x2c ATmega328.o
+ .text.timer1InputCaptureNoiseCancelerConfig
+                0x00000000       0x10 ATmega328.o
+ .text.timer1ActivateOverflowInterrupt
+                0x00000000        0xe ATmega328.o
+ .text.timer1DeactivateOverflowInterrupt
+                0x00000000        0xe ATmega328.o
+ .text.timer1ClearOverflowInterruptRequest
+                0x00000000        0x6 ATmega328.o
+ .text.timer1ActivateCompareAInterrupt
+                0x00000000        0xe ATmega328.o
+ .text.timer1DeactivateCompareAInterrupt
+                0x00000000        0xe ATmega328.o
+ .text.timer1ClearCompareAInterruptRequest
+                0x00000000        0x6 ATmega328.o
+ .text.timer1ActivateCompareBInterrupt
+                0x00000000        0xe ATmega328.o
+ .text.timer1DeactivateCompareBInterrupt
+                0x00000000        0xe ATmega328.o
+ .text.timer1ClearCompareBInterruptRequest
+                0x00000000        0x6 ATmega328.o
+ .text.timer1ActivateInputCaptureInterrupt
+                0x00000000        0xe ATmega328.o
+ .text.timer1DeactivateInputCaptureInterrupt
+                0x00000000        0xe ATmega328.o
+ .text.timer1ClearInputCaptureInterruptRequest
+                0x00000000        0x6 ATmega328.o
+ .text.timer1ForceCompareA
+                0x00000000        0xe ATmega328.o
+ .text.timer1ForceCompareB
+                0x00000000        0xe ATmega328.o
+ .text.timer1SetCounterValue
+                0x00000000       0x14 ATmega328.o
+ .text.timer1GetCounterValue
+                0x00000000        0xa ATmega328.o
+ .text.timer1SetCompareAValue
+                0x00000000       0x14 ATmega328.o
+ .text.timer1GetCompareAValue
+                0x00000000        0xa ATmega328.o
+ .text.timer1SetCompareBValue
+                0x00000000       0x14 ATmega328.o
+ .text.timer1GetCompareBValue
+                0x00000000        0xa ATmega328.o
+ .text.timer1SetInputCaptureValue
+                0x00000000       0x14 ATmega328.o
+ .text.timer1GetInputCaptureValue
+                0x00000000        0xa ATmega328.o
+ .text.timer2Config
+                0x00000000       0x30 ATmega328.o
+ .text.timer2OutputConfig
+                0x00000000       0x2c ATmega328.o
+ .text.timer2ActivateOverflowInterrupt
+                0x00000000        0xe ATmega328.o
+ .text.timer2DeactivateOverflowInterrupt
+                0x00000000        0xe ATmega328.o
+ .text.timer2ClearOverflowInterruptRequest
+                0x00000000        0x6 ATmega328.o
+ .text.timer2ActivateCompareAInterrupt
+                0x00000000        0xe ATmega328.o
+ .text.timer2DeactivateCompareAInterrupt
+                0x00000000        0xe ATmega328.o
+ .text.timer2ClearCompareAInterruptRequest
+                0x00000000        0x6 ATmega328.o
+ .text.timer2ActivateCompareBInterrupt
+                0x00000000        0xe ATmega328.o
+ .text.timer2DeactivateCompareBInterrupt
+                0x00000000        0xe ATmega328.o
+ .text.timer2ClearCompareBInterruptRequest
+                0x00000000        0x6 ATmega328.o
+ .text.timer2ForceCompareA
+                0x00000000        0xe ATmega328.o
+ .text.timer2ForceCompareB
+                0x00000000        0xe ATmega328.o
+ .text.timer2SetCounterValue
+                0x00000000        0x8 ATmega328.o
+ .text.timer2GetCounterValue
+                0x00000000        0x6 ATmega328.o
+ .text.timer2SetCompareAValue
+                0x00000000        0x8 ATmega328.o
+ .text.timer2GetCompareAValue
+                0x00000000        0x6 ATmega328.o
+ .text.timer2SetCompareBValue
+                0x00000000        0x8 ATmega328.o
+ .text.timer2GetCompareBValue
+                0x00000000        0x6 ATmega328.o
+ .text.adcConfig
+                0x00000000       0xa0 ATmega328.o
+ .progmem.gcc_sw_table.adcConfig
+                0x00000000        0xe ATmega328.o
+ .text.adcSelectChannel
+                0x00000000       0x10 ATmega328.o
+ .text.adcEnableDigitalInput
+                0x00000000       0x10 ATmega328.o
+ .text.adcDisableDigitalInput
+                0x00000000        0xe ATmega328.o
+ .text.adcDataPresentation
+                0x00000000       0x1e ATmega328.o
+ .text.adcEnable
+                0x00000000        0xe ATmega328.o
+ .text.adcDisable
+                0x00000000        0xe ATmega328.o
+ .text.adcClearInterruptRequest
+                0x00000000        0xe ATmega328.o
+ .text.adcActivateInterrupt
+                0x00000000        0xe ATmega328.o
+ .text.adcDeactivateInterrupt
+                0x00000000        0xe ATmega328.o
+ .text.adcStartConversion
+                0x00000000        0xe ATmega328.o
+ .text.adcIsBusy
+                0x00000000        0xc ATmega328.o
+ .text.adcWaitUntilConversionFinish
+                0x00000000        0xe ATmega328.o
+ .text.usartConfig
+                0x00000000      0x15e ATmega328.o
+ .text.usartEnableReceiver
+                0x00000000        0xe ATmega328.o
+ .text.usartDisableReceiver
+                0x00000000        0xe ATmega328.o
+ .text.usartEnableTransmitter
+                0x00000000        0xe ATmega328.o
+ .text.usartDisableTransmitter
+                0x00000000        0xe ATmega328.o
+ .text.usartActivateReceptionCompleteInterrupt
+                0x00000000        0xe ATmega328.o
+ .text.usartDeactivateReceptionCompleteInterrupt
+                0x00000000        0xe ATmega328.o
+ .text.usartActivateTransmissionCompleteInterrupt
+                0x00000000        0xe ATmega328.o
+ .text.usartDeactivateTransmissionCompleteInterrupt
+                0x00000000        0xe ATmega328.o
+ .text.usartActivateBufferEmptyInterrupt
+                0x00000000        0xe ATmega328.o
+ .text.usartDeactivateBufferEmptyInterrupt
+                0x00000000        0xe ATmega328.o
+ .text.usartStdio
+                0x00000000       0x18 ATmega328.o
+ .text.usartIsReceptionComplete
+                0x00000000        0xc ATmega328.o
+ .text.usartIsTransmissionComplete
+                0x00000000        0xc ATmega328.o
+ .text.usartIsBufferEmpty
+                0x00000000        0xc ATmega328.o
+ .text.usartTransmitStd
+                0x00000000       0x16 ATmega328.o
+ .text.usartCheckError
+                0x00000000       0x26 ATmega328.o
+ .text.usartTransmit
+                0x00000000       0x16 ATmega328.o
+ .text.usartTransmit9bits
+                0x00000000       0x3a ATmega328.o
+ .text.usartReceive
+                0x00000000       0x14 ATmega328.o
+ .text.usartReceive9bits
+                0x00000000       0x28 ATmega328.o
+ .text.usartClearReceptionBuffer
+                0x00000000       0x1a ATmega328.o
+ .text.usartAddDataToReceiverBuffer
+                0x00000000       0x6a ATmega328.o
+ .text.usartGetDataFromReceiverBuffer
+                0x00000000       0x44 ATmega328.o
+ .text.usartIsReceiverBufferEmpty
+                0x00000000        0xc ATmega328.o
+ .text.usartGetCurrentBaudRate
+                0x00000000        0x8 ATmega328.o
+ .text.spiInit  0x00000000        0x2 ATmega328.o
+ .text.spiMasterTransmit
+                0x00000000        0xc ATmega328.o
+ .text.spiSlaveTransmit
+                0x00000000        0xa ATmega328.o
+ .data.usartStream
+                0x00000000        0xe ATmega328.o
+ .debug_info    0x00000000     0x2436 ATmega328.o
+ .debug_abbrev  0x00000000      0x388 ATmega328.o
+ .debug_loc     0x00000000     0x1812 ATmega328.o
+ .debug_aranges
+                0x00000000      0x5b0 ATmega328.o
+ .debug_ranges  0x00000000      0x5c0 ATmega328.o
+ .debug_line    0x00000000     0x1ee5 ATmega328.o
+ .debug_str     0x00000000     0x247b ATmega328.o
+ .comment       0x00000000       0x31 ATmega328.o
+ .debug_frame   0x00000000      0xbc0 ATmega328.o
+ COMMON         0x00000000       0x35 ATmega328.o
+ .text          0x00000000        0x0 main.o
+ .data          0x00000000        0x0 main.o
+ .bss           0x00000000        0x0 main.o
+ .data          0x00000000        0x0 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515.o)
+ .bss           0x00000000        0x0 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515.o)
+ .data          0x00000000        0x0 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_buffer.o)
+ .bss           0x00000000        0x0 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_buffer.o)
+ .data          0x00000000        0x0 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_get_message.o)
+ .bss           0x00000000        0x0 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_get_message.o)
+ .data          0x00000000        0x0 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_send_message.o)
+ .bss           0x00000000        0x0 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_send_message.o)
+ .data          0x00000000        0x0 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_static_filter.o)
+ .bss           0x00000000        0x0 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_static_filter.o)
+ .data          0x00000000        0x0 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_write_id.o)
+ .bss           0x00000000        0x0 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_write_id.o)
+ .data          0x00000000        0x0 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_read_id.o)
+ .bss           0x00000000        0x0 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_read_id.o)
+ .data          0x00000000        0x0 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(spi.o)
+ .bss           0x00000000        0x0 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(spi.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodsi4.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodsi4.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.div
+                0x00000000       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodsi4.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_tablejump2.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_tablejump2.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc   0x00000000        0xc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_tablejump2.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_ashrdi3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_ashrdi3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_ashrdi3.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_ashrdi3.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_ashrdi3.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_ashrdi3.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_ashrdi3.o)
+ .text.libgcc.builtins
+                0x00000000       0x3c c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_ashrdi3.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_ashrdi3.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_ashrdi3.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(iob.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(iob.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(iob.o)
+ .comment       0x00000000       0x31 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(iob.o)
+ COMMON         0x00000000        0x6 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(iob.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+user_signatures  0x00850000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.0.106/gcc/dev/atmega328p/avr5/crtatmega328p.o
+LOAD ATmega328.o
+LOAD main.o
+START GROUP
+LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a
+LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libprintf_min.a
+LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libscanf_flt.a
+LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libscanf_min.a
+LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libprintf_flt.a
+LOAD C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a
+END GROUP
+START GROUP
+LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a
+LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a
+LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a
+LOAD C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.0.106/gcc/dev/atmega328p/avr5\libatmega328p.a
+END GROUP
+                0x00020000                __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x20000
+                0x0000ffa0                __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xffa0
+                0x00010000                __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
+                0x00000400                __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x400
+                0x00000400                __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x400
+                0x00000400                __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x400
+                0x00000400                __USER_SIGNATURE_REGION_LENGTH__ = DEFINED (__USER_SIGNATURE_REGION_LENGTH__)?__USER_SIGNATURE_REGION_LENGTH__:0x400
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0x60e
+ *(.vectors)
+ .vectors       0x00000000       0x68 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.0.106/gcc/dev/atmega328p/avr5/crtatmega328p.o
+                0x00000000                __vector_default
+                0x00000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+                0x00000068                . = ALIGN (0x2)
+                0x00000068                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000068        0x0 linker stubs
+ *(.trampolines*)
+                0x00000068                __trampolines_end = .
+ *(.progmem*)
+ .progmem.data.can_filter
+                0x00000068       0x20 main.o
+                0x00000068                can_filter
+ .progmem.data  0x00000088       0x18 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515.o)
+                0x00000088                _mcp2515_cnf
+                0x000000a0                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x000000a0                __ctors_start = .
+ *(.ctors)
+                0x000000a0                __ctors_end = .
+                0x000000a0                __dtors_start = .
+ *(.dtors)
+                0x000000a0                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x000000a0        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.0.106/gcc/dev/atmega328p/avr5/crtatmega328p.o
+                0x000000a0                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x000000a0        0xc C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.0.106/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x000000ac       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_copy_data.o)
+                0x000000ac                __do_copy_data
+ .init4         0x000000c2       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_clear_bss.o)
+                0x000000c2                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x000000d2        0x8 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.0.106/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ *(.init9)
+ *(.text)
+ .text          0x000000da        0x4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.0.106/gcc/dev/atmega328p/avr5/crtatmega328p.o
+                0x000000da                __vector_22
+                0x000000da                __vector_1
+                0x000000da                __vector_24
+                0x000000da                __vector_12
+                0x000000da                __bad_interrupt
+                0x000000da                __vector_6
+                0x000000da                __vector_3
+                0x000000da                __vector_23
+                0x000000da                __vector_25
+                0x000000da                __vector_11
+                0x000000da                __vector_13
+                0x000000da                __vector_17
+                0x000000da                __vector_19
+                0x000000da                __vector_7
+                0x000000da                __vector_5
+                0x000000da                __vector_4
+                0x000000da                __vector_9
+                0x000000da                __vector_2
+                0x000000da                __vector_21
+                0x000000da                __vector_15
+                0x000000da                __vector_8
+                0x000000da                __vector_14
+                0x000000da                __vector_10
+                0x000000da                __vector_16
+                0x000000da                __vector_18
+                0x000000da                __vector_20
+ .text          0x000000de      0x148 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515.o)
+                0x000000de                mcp2515_read_status
+                0x000000ee                mcp2515_bit_modify
+                0x0000011e                mcp2515_read_register
+                0x0000013c                mcp2515_write_register
+                0x00000160                can_init
+ .text          0x00000226       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_buffer.o)
+                0x00000226                can_check_message
+                0x00000232                can_check_free_buffer
+ .text          0x00000246       0xce C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_get_message.o)
+                0x00000246                can_get_message
+ .text          0x00000314       0x9a C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_send_message.o)
+                0x00000314                can_send_message
+ .text          0x000003ae       0x78 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_static_filter.o)
+                0x000003ae                can_static_filter
+ .text          0x00000426       0x32 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_write_id.o)
+                0x00000426                mcp2515_write_id
+ .text          0x00000458       0x72 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_read_id.o)
+                0x00000458                mcp2515_read_id
+ .text          0x000004ca       0x14 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(spi.o)
+                0x000004ca                mcp2515_spi_init
+                0x000004d4                spi_putc
+                0x000004de                . = ALIGN (0x2)
+ *(.text.*)
+ .text.main     0x000004de      0x12c main.o
+                0x000004de                main
+                0x0000060a                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x0000060a        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+                0x0000060a                _exit
+                0x0000060a                exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x0000060a        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x0000060e                _etext = .
+
+.data           0x00800100        0x0 load address 0x0000060e
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800100                . = ALIGN (0x2)
+                0x00800100                _edata = .
+                0x00800100                PROVIDE (__data_end, .)
+
+.bss            0x00800100        0x1
+                0x00800100                PROVIDE (__bss_start, .)
+ *(.bss)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x00800100        0x1 main.o
+                0x00800100                estados
+                0x00800101                PROVIDE (__bss_end, .)
+                0x0000060e                __data_load_start = LOADADDR (.data)
+                0x0000060e                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800101        0x0
+                [!provide]                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                [!provide]                PROVIDE (__noinit_end, .)
+                0x00800101                _end = .
+                [!provide]                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x30
+ *(.comment)
+ .comment       0x00000000       0x30 main.o
+                                 0x31 (size before relaxing)
+
+.note.gnu.avr.deviceinfo
+                0x00000000       0x40
+ .note.gnu.avr.deviceinfo
+                0x00000000       0x40 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.0.106/gcc/dev/atmega328p/avr5/crtatmega328p.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x120
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 main.o
+ .debug_aranges
+                0x00000020       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515.o)
+ .debug_aranges
+                0x00000040       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_buffer.o)
+ .debug_aranges
+                0x00000060       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_get_message.o)
+ .debug_aranges
+                0x00000080       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_send_message.o)
+ .debug_aranges
+                0x000000a0       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_static_filter.o)
+ .debug_aranges
+                0x000000c0       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_write_id.o)
+ .debug_aranges
+                0x000000e0       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_read_id.o)
+ .debug_aranges
+                0x00000100       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(spi.o)
+
+.debug_pubnames
+                0x00000000      0x1cc
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0x94 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515.o)
+ .debug_pubnames
+                0x00000094       0x42 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_buffer.o)
+ .debug_pubnames
+                0x000000d6       0x26 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_get_message.o)
+ .debug_pubnames
+                0x000000fc       0x27 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_send_message.o)
+ .debug_pubnames
+                0x00000123       0x28 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_static_filter.o)
+ .debug_pubnames
+                0x0000014b       0x27 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_write_id.o)
+ .debug_pubnames
+                0x00000172       0x26 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_read_id.o)
+ .debug_pubnames
+                0x00000198       0x34 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(spi.o)
+
+.debug_info     0x00000000      0xf46
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x3ea main.o
+ .debug_info    0x000003ea      0x30a C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515.o)
+ .debug_info    0x000006f4       0xb2 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_buffer.o)
+ .debug_info    0x000007a6      0x170 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_get_message.o)
+ .debug_info    0x00000916      0x250 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_send_message.o)
+ .debug_info    0x00000b66       0xef C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_static_filter.o)
+ .debug_info    0x00000c55      0x105 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_write_id.o)
+ .debug_info    0x00000d5a      0x141 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_read_id.o)
+ .debug_info    0x00000e9b       0xab C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(spi.o)
+
+.debug_abbrev   0x00000000      0x916
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x228 main.o
+ .debug_abbrev  0x00000228      0x144 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515.o)
+ .debug_abbrev  0x0000036c       0x7b C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_buffer.o)
+ .debug_abbrev  0x000003e7       0xf7 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_get_message.o)
+ .debug_abbrev  0x000004de      0x15e C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_send_message.o)
+ .debug_abbrev  0x0000063c       0x9d C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_static_filter.o)
+ .debug_abbrev  0x000006d9       0xd9 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_write_id.o)
+ .debug_abbrev  0x000007b2       0xe9 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_read_id.o)
+ .debug_abbrev  0x0000089b       0x7b C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(spi.o)
+
+.debug_line     0x00000000      0xc2a
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x00000000      0x1b8 main.o
+ .debug_line    0x000001b8      0x2d4 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515.o)
+ .debug_line    0x0000048c       0xbb C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_buffer.o)
+ .debug_line    0x00000547      0x15c C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_get_message.o)
+ .debug_line    0x000006a3      0x1a1 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_send_message.o)
+ .debug_line    0x00000844      0x114 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_static_filter.o)
+ .debug_line    0x00000958       0xe3 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_write_id.o)
+ .debug_line    0x00000a3b      0x127 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_read_id.o)
+ .debug_line    0x00000b62       0xc8 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(spi.o)
+
+.debug_frame    0x00000000      0x194
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x34 main.o
+ .debug_frame   0x00000034       0x60 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515.o)
+ .debug_frame   0x00000094       0x30 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_buffer.o)
+ .debug_frame   0x000000c4       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_get_message.o)
+ .debug_frame   0x000000e4       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_send_message.o)
+ .debug_frame   0x00000104       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_static_filter.o)
+ .debug_frame   0x00000124       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_write_id.o)
+ .debug_frame   0x00000144       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_read_id.o)
+ .debug_frame   0x00000164       0x30 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(spi.o)
+
+.debug_str      0x00000000      0x560
+ *(.debug_str)
+ .debug_str     0x00000000      0x345 main.o
+                                0x37e (size before relaxing)
+ .debug_str     0x00000345      0x106 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515.o)
+                                0x244 (size before relaxing)
+ .debug_str     0x0000044b       0x27 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_buffer.o)
+                                0x106 (size before relaxing)
+ .debug_str     0x00000472       0x1b C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_get_message.o)
+                                0x113 (size before relaxing)
+ .debug_str     0x0000048d       0x3c C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_send_message.o)
+                                0x16f (size before relaxing)
+ .debug_str     0x000004c9       0x18 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_static_filter.o)
+                                0x10c (size before relaxing)
+ .debug_str     0x000004e1       0x37 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_write_id.o)
+                                0x105 (size before relaxing)
+ .debug_str     0x00000518       0x28 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_read_id.o)
+                                0x109 (size before relaxing)
+ .debug_str     0x00000540       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(spi.o)
+                                 0xe5 (size before relaxing)
+
+.debug_loc      0x00000000      0x415
+ *(.debug_loc)
+ .debug_loc     0x00000000       0x47 main.o
+ .debug_loc     0x00000047      0x177 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515.o)
+ .debug_loc     0x000001be       0x95 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_get_message.o)
+ .debug_loc     0x00000253       0x95 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_send_message.o)
+ .debug_loc     0x000002e8       0x79 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_static_filter.o)
+ .debug_loc     0x00000361       0x28 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_write_id.o)
+ .debug_loc     0x00000389       0x79 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_read_id.o)
+ .debug_loc     0x00000402       0x13 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(spi.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x00000000       0x30
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0x10 main.o
+ .debug_ranges  0x00000010       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515.o)
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(MI_sisAux2016.elf elf32-avr)
+LOAD linker stubs

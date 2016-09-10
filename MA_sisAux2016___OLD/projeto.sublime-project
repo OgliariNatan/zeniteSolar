@@ -1,0 +1,17 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "MA_sisAux2016"
+		}
+	],
+	"SublimeLinter":
+    {
+        "linters":
+        {
+            "cppcheck": {
+            }
+        }
+    }
+}
