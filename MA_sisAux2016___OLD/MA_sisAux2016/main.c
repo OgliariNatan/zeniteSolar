@@ -6,13 +6,13 @@
  * Equipe zênite solar
  */ 
 
-#define F_CPU 16000000UL
-
 #include <avr/io.h>
 #include <avr/pgmspace.h>
 //#include "avr/wdt.h" //biblioteca whatdog
 #include "can.h"
 #include <util/delay.h>
+
+#define F_CPU 16000000UL
 
 #define BOMBA1 PD6
 #define BOMBA2 PB0
@@ -20,10 +20,10 @@
 
 typedef union estados_t {
 	struct {
-		unsigned char Bomba1	 : 1;
-		unsigned char Bomba2	 : 1;
-		unsigned char Inter		 : 1;
-		unsigned char tensaoBat	 : 1;
+		uint8_t Bomba1;
+		uint8_t Bomba2;
+		uint8_t Inter;
+		uint8_t tensaoBat;
 	};
 	unsigned char todas;
 } estados_t;
@@ -35,12 +35,15 @@ const uint8_t can_filter[] PROGMEM;
 
 int main(void)
 {
-	DDRD = (1 << BOMBA1) || (1 << BOMBA2) || (1 << TensaoBat);
-	//int rId = 0;
+	DDRD |= (1 << BOMBA1); 
+	DDRB |= (1 << BOMBA2);
+	//|| (1 << TensaoBat) configurar adc
+	uint8_t rId = 0;
 	// Initialize MCP2515
 	can_init(BITRATE_125_KBPS);
+
 	
-	//can_set_mode(NORMAL_MODE);//!<Modo de operação normal
+	can_set_mode(NORMAL_MODE);//!<Modo de operação normal
 	
 	//can_disable_filter(0xff);
 	
@@ -58,9 +61,10 @@ int main(void)
 	msg.data[3] = 0xef;
 	msg.data[4] = 0xef;
 	
-	msg.id = 0x0000;
+	
+	msg.id = 0;
 	msg.flags.rtr = 0;
-	//rId = mcp2515_read_id();
+	
 		
 	while (1)
 	{	
@@ -70,24 +74,24 @@ int main(void)
 		
 			if (can_get_message(&dado));//!<Tenta ler a mensagem
 		}
-		//int n, a, t, o, g;
 		
+		estados.Bomba1 = dado.data[0];
+		estados.Bomba2 = dado.data[1];
 		
-		
-				
-		if (1) {//!<inverte o estado da bomba1 de porão.
-			PORTD^=(1<<BOMBA1);
-		}
-		
-		if (1) {//!<inverte o estado da bomba2 de porão.
-			PORTD^=(0<<BOMBA2);
-		}
-		
-		
-	_delay_ms(1000);
-	}
+		//rId = mcp2515_read_id(dado.id);
 	
-	return 0;
+		if (estados.Bomba1) {//!<inverte o estado da bomba1 de porão.
+			PORTD |= (1<<BOMBA1);
+		}else{
+			PORTD &= (0<<BOMBA1);
+		}
+		
+		if (estados.Bomba2) {//!<inverte o estado da bomba2 de porão.
+			PORTD |= (1<<BOMBA2);
+		}else{
+			PORTD &= (0<<BOMBA2);
+		}
+	}
 }
 
 const uint8_t can_filter[] PROGMEM = 

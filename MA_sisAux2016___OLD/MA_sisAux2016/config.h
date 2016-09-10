@@ -47,6 +47,9 @@
  */
 #define	MCP2515_CS				B,2
 #define	MCP2515_INT				C,0 //!<Coloca o pino PC0 como interrupção para leitura do camBus
+#define	P_MOSI	B,3
+#define	P_MISO	B,4
+#define	P_SCK	B,5
 
 // -----------------------------------------------------------------------------
 // Setting for SJA1000

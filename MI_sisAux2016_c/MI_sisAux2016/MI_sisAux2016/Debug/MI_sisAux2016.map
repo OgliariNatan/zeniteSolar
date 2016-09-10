@@ -14,6 +14,8 @@ C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mc
                               C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_send_message.o) (mcp2515_write_id)
 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_read_id.o)
                               C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_get_message.o) (mcp2515_read_id)
+C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_set_mode.o)
+                              main.o (can_set_mode)
 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(spi.o)
                               C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515.o) (mcp2515_spi_init)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodsi4.o)
@@ -34,7 +36,6 @@ c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/..
 Allocating common symbols
 Common symbol       size              file
 
-estados             0x1               main.o
 usartReceiverBuffer
                     0x32              ATmega328.o
 usartReceiverBufferNextWrite
@@ -356,13 +357,9 @@ Discarded input sections
                 0x00000000        0xc ATmega328.o
  .text.adcWaitUntilConversionFinish
                 0x00000000        0xe ATmega328.o
- .text.usartConfig
-                0x00000000      0x15e ATmega328.o
  .text.usartEnableReceiver
                 0x00000000        0xe ATmega328.o
  .text.usartDisableReceiver
-                0x00000000        0xe ATmega328.o
- .text.usartEnableTransmitter
                 0x00000000        0xe ATmega328.o
  .text.usartDisableTransmitter
                 0x00000000        0xe ATmega328.o
@@ -384,14 +381,10 @@ Discarded input sections
                 0x00000000        0xc ATmega328.o
  .text.usartIsTransmissionComplete
                 0x00000000        0xc ATmega328.o
- .text.usartIsBufferEmpty
-                0x00000000        0xc ATmega328.o
  .text.usartTransmitStd
                 0x00000000       0x16 ATmega328.o
  .text.usartCheckError
                 0x00000000       0x26 ATmega328.o
- .text.usartTransmit
-                0x00000000       0x16 ATmega328.o
  .text.usartTransmit9bits
                 0x00000000       0x3a ATmega328.o
  .text.usartReceive
@@ -415,16 +408,6 @@ Discarded input sections
                 0x00000000        0xa ATmega328.o
  .data.usartStream
                 0x00000000        0xe ATmega328.o
- .debug_info    0x00000000     0x2436 ATmega328.o
- .debug_abbrev  0x00000000      0x388 ATmega328.o
- .debug_loc     0x00000000     0x1812 ATmega328.o
- .debug_aranges
-                0x00000000      0x5b0 ATmega328.o
- .debug_ranges  0x00000000      0x5c0 ATmega328.o
- .debug_line    0x00000000     0x1ee5 ATmega328.o
- .debug_str     0x00000000     0x247b ATmega328.o
- .comment       0x00000000       0x31 ATmega328.o
- .debug_frame   0x00000000      0xbc0 ATmega328.o
  COMMON         0x00000000       0x35 ATmega328.o
  .text          0x00000000        0x0 main.o
  .data          0x00000000        0x0 main.o
@@ -443,6 +426,8 @@ Discarded input sections
  .bss           0x00000000        0x0 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_write_id.o)
  .data          0x00000000        0x0 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_read_id.o)
  .bss           0x00000000        0x0 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_read_id.o)
+ .data          0x00000000        0x0 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_set_mode.o)
+ .bss           0x00000000        0x0 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_set_mode.o)
  .data          0x00000000        0x0 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(spi.o)
  .bss           0x00000000        0x0 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(spi.o)
  .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodsi4.o)
@@ -450,8 +435,6 @@ Discarded input sections
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodsi4.o)
  .text.libgcc.mul
                 0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodsi4.o)
- .text.libgcc.div
-                0x00000000       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodsi4.o)
  .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodsi4.o)
  .text.libgcc.prologue
                 0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodsi4.o)
@@ -535,8 +518,6 @@ Discarded input sections
  .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_ashrdi3.o)
  .text.libgcc.prologue
                 0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_ashrdi3.o)
- .text.libgcc.builtins
-                0x00000000       0x3c c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_ashrdi3.o)
  .text.libgcc.fmul
                 0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_ashrdi3.o)
  .text.libgcc.fixed
@@ -677,7 +658,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000      0x612
+.text           0x00000000      0x86c
  *(.vectors)
  .vectors       0x00000000       0x68 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.0.106/gcc/dev/atmega328p/avr5/crtatmega328p.o
                 0x00000000                __vector_default
@@ -784,18 +765,54 @@ END GROUP
                 0x00000426                mcp2515_write_id
  .text          0x00000458       0x72 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_read_id.o)
                 0x00000458                mcp2515_read_id
- .text          0x000004ca       0x14 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(spi.o)
-                0x000004ca                mcp2515_spi_init
-                0x000004d4                spi_putc
-                0x000004de                . = ALIGN (0x2)
+ .text          0x000004ca       0x48 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_set_mode.o)
+                0x000004ca                can_set_mode
+ .text          0x00000512       0x14 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(spi.o)
+                0x00000512                mcp2515_spi_init
+                0x0000051c                spi_putc
+                0x00000526                . = ALIGN (0x2)
  *(.text.*)
- .text.main     0x000004de      0x130 main.o
-                0x000004de                main
-                0x0000060e                . = ALIGN (0x2)
+ .text.usartConfig
+                0x00000526      0x15e ATmega328.o
+                0x00000526                usartConfig
+ .text.usartEnableTransmitter
+                0x00000684        0xe ATmega328.o
+                0x00000684                usartEnableTransmitter
+ .text.usartIsBufferEmpty
+                0x00000692        0xc ATmega328.o
+                0x00000692                usartIsBufferEmpty
+ .text.usartTransmit
+                0x0000069e       0x16 ATmega328.o
+                0x0000069e                usartTransmit
+ .text.updateSystemStatus
+                0x000006b4       0x34 main.o
+                0x000006b4                updateSystemStatus
+ .text.sendSystemStatus
+                0x000006e8       0x52 main.o
+                0x000006e8                sendSystemStatus
+ .text.canConfig
+                0x0000073a       0x16 main.o
+                0x0000073a                canConfig
+ .text.inputsConfig
+                0x00000750        0xa main.o
+                0x00000750                inputsConfig
+ .text.configSystem
+                0x0000075a       0x2a main.o
+                0x0000075a                configSystem
+ .text.main     0x00000784       0x64 main.o
+                0x00000784                main
+ .text.libgcc.div
+                0x000007e8       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodsi4.o)
+                0x000007e8                __udivmodsi4
+ .text.libgcc.builtins
+                0x0000082c       0x3c c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_ashrdi3.o)
+                0x0000082c                __ashrdi3
+                0x00000830                __lshrdi3
+                0x00000868                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x0000060e        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
-                0x0000060e                _exit
-                0x0000060e                exit
+ .fini9         0x00000868        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+                0x00000868                _exit
+                0x00000868                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -814,11 +831,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x0000060e        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ .fini0         0x00000868        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x00000612                _etext = .
+                0x0000086c                _etext = .
 
-.data           0x00800100        0x0 load address 0x00000612
+.data           0x00800100        0x0 load address 0x0000086c
                 0x00800100                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -829,22 +846,20 @@ END GROUP
                 0x00800100                _edata = .
                 0x00800100                PROVIDE (__data_end, .)
 
-.bss            0x00800100        0x1
+.bss            0x00800100        0x0
                 0x00800100                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
  *(COMMON)
- COMMON         0x00800100        0x1 main.o
-                0x00800100                estados
-                0x00800101                PROVIDE (__bss_end, .)
-                0x00000612                __data_load_start = LOADADDR (.data)
-                0x00000612                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00800100                PROVIDE (__bss_end, .)
+                0x0000086c                __data_load_start = LOADADDR (.data)
+                0x0000086c                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x00800101        0x0
+.noinit         0x00800100        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
  *(.noinit*)
                 [!provide]                PROVIDE (__noinit_end, .)
-                0x00800101                _end = .
+                0x00800100                _end = .
                 [!provide]                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
@@ -886,8 +901,9 @@ END GROUP
 
 .comment        0x00000000       0x30
  *(.comment)
- .comment       0x00000000       0x30 main.o
+ .comment       0x00000000       0x30 ATmega328.o
                                  0x31 (size before relaxing)
+ .comment       0x00000030       0x31 main.o
 
 .note.gnu.avr.deviceinfo
                 0x00000000       0x40
@@ -909,29 +925,33 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0x120
+.debug_aranges  0x00000000      0x718
  *(.debug_aranges)
  .debug_aranges
-                0x00000000       0x20 main.o
+                0x00000000      0x5b0 ATmega328.o
  .debug_aranges
-                0x00000020       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515.o)
+                0x000005b0       0x48 main.o
  .debug_aranges
-                0x00000040       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_buffer.o)
+                0x000005f8       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515.o)
  .debug_aranges
-                0x00000060       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_get_message.o)
+                0x00000618       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_buffer.o)
  .debug_aranges
-                0x00000080       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_send_message.o)
+                0x00000638       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_get_message.o)
  .debug_aranges
-                0x000000a0       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_static_filter.o)
+                0x00000658       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_send_message.o)
  .debug_aranges
-                0x000000c0       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_write_id.o)
+                0x00000678       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_static_filter.o)
  .debug_aranges
-                0x000000e0       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_read_id.o)
+                0x00000698       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_write_id.o)
  .debug_aranges
-                0x00000100       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(spi.o)
+                0x000006b8       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_read_id.o)
+ .debug_aranges
+                0x000006d8       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_set_mode.o)
+ .debug_aranges
+                0x000006f8       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(spi.o)
 
 .debug_pubnames
-                0x00000000      0x1cc
+                0x00000000      0x1ef
  *(.debug_pubnames)
  .debug_pubnames
                 0x00000000       0x94 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515.o)
@@ -948,87 +968,103 @@ END GROUP
  .debug_pubnames
                 0x00000172       0x26 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_read_id.o)
  .debug_pubnames
-                0x00000198       0x34 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(spi.o)
+                0x00000198       0x23 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_set_mode.o)
+ .debug_pubnames
+                0x000001bb       0x34 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(spi.o)
 
-.debug_info     0x00000000      0xf46
+.debug_info     0x00000000     0x3762
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x00000000      0x3ea main.o
- .debug_info    0x000003ea      0x30a C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515.o)
- .debug_info    0x000006f4       0xb2 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_buffer.o)
- .debug_info    0x000007a6      0x170 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_get_message.o)
- .debug_info    0x00000916      0x250 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_send_message.o)
- .debug_info    0x00000b66       0xef C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_static_filter.o)
- .debug_info    0x00000c55      0x105 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_write_id.o)
- .debug_info    0x00000d5a      0x141 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_read_id.o)
- .debug_info    0x00000e9b       0xab C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(spi.o)
+ .debug_info    0x00000000     0x2436 ATmega328.o
+ .debug_info    0x00002436      0x700 main.o
+ .debug_info    0x00002b36      0x30a C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515.o)
+ .debug_info    0x00002e40       0xb2 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_buffer.o)
+ .debug_info    0x00002ef2      0x170 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_get_message.o)
+ .debug_info    0x00003062      0x250 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_send_message.o)
+ .debug_info    0x000032b2       0xef C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_static_filter.o)
+ .debug_info    0x000033a1      0x105 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_write_id.o)
+ .debug_info    0x000034a6      0x141 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_read_id.o)
+ .debug_info    0x000035e7       0xd0 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_set_mode.o)
+ .debug_info    0x000036b7       0xab C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(spi.o)
 
-.debug_abbrev   0x00000000      0x916
+.debug_abbrev   0x00000000      0xd47
  *(.debug_abbrev)
- .debug_abbrev  0x00000000      0x228 main.o
- .debug_abbrev  0x00000228      0x144 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515.o)
- .debug_abbrev  0x0000036c       0x7b C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_buffer.o)
- .debug_abbrev  0x000003e7       0xf7 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_get_message.o)
- .debug_abbrev  0x000004de      0x15e C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_send_message.o)
- .debug_abbrev  0x0000063c       0x9d C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_static_filter.o)
- .debug_abbrev  0x000006d9       0xd9 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_write_id.o)
- .debug_abbrev  0x000007b2       0xe9 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_read_id.o)
- .debug_abbrev  0x0000089b       0x7b C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(spi.o)
+ .debug_abbrev  0x00000000      0x388 ATmega328.o
+ .debug_abbrev  0x00000388      0x23b main.o
+ .debug_abbrev  0x000005c3      0x144 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515.o)
+ .debug_abbrev  0x00000707       0x7b C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_buffer.o)
+ .debug_abbrev  0x00000782       0xf7 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_get_message.o)
+ .debug_abbrev  0x00000879      0x15e C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_send_message.o)
+ .debug_abbrev  0x000009d7       0x9d C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_static_filter.o)
+ .debug_abbrev  0x00000a74       0xd9 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_write_id.o)
+ .debug_abbrev  0x00000b4d       0xe9 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_read_id.o)
+ .debug_abbrev  0x00000c36       0x96 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_set_mode.o)
+ .debug_abbrev  0x00000ccc       0x7b C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(spi.o)
 
-.debug_line     0x00000000      0xc2a
+.debug_line     0x00000000     0x2c35
  *(.debug_line .debug_line.* .debug_line_end)
- .debug_line    0x00000000      0x1b8 main.o
- .debug_line    0x000001b8      0x2d4 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515.o)
- .debug_line    0x0000048c       0xbb C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_buffer.o)
- .debug_line    0x00000547      0x15c C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_get_message.o)
- .debug_line    0x000006a3      0x1a1 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_send_message.o)
- .debug_line    0x00000844      0x114 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_static_filter.o)
- .debug_line    0x00000958       0xe3 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_write_id.o)
- .debug_line    0x00000a3b      0x127 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_read_id.o)
- .debug_line    0x00000b62       0xc8 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(spi.o)
+ .debug_line    0x00000000     0x1ee5 ATmega328.o
+ .debug_line    0x00001ee5      0x20d main.o
+ .debug_line    0x000020f2      0x2d4 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515.o)
+ .debug_line    0x000023c6       0xbb C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_buffer.o)
+ .debug_line    0x00002481      0x15c C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_get_message.o)
+ .debug_line    0x000025dd      0x1a1 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_send_message.o)
+ .debug_line    0x0000277e      0x114 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_static_filter.o)
+ .debug_line    0x00002892       0xe3 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_write_id.o)
+ .debug_line    0x00002975      0x127 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_read_id.o)
+ .debug_line    0x00002a9c       0xd1 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_set_mode.o)
+ .debug_line    0x00002b6d       0xc8 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(spi.o)
 
-.debug_frame    0x00000000      0x194
+.debug_frame    0x00000000      0xde0
  *(.debug_frame)
- .debug_frame   0x00000000       0x34 main.o
- .debug_frame   0x00000034       0x60 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515.o)
- .debug_frame   0x00000094       0x30 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_buffer.o)
- .debug_frame   0x000000c4       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_get_message.o)
- .debug_frame   0x000000e4       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_send_message.o)
- .debug_frame   0x00000104       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_static_filter.o)
- .debug_frame   0x00000124       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_write_id.o)
- .debug_frame   0x00000144       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_read_id.o)
- .debug_frame   0x00000164       0x30 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(spi.o)
+ .debug_frame   0x00000000      0xbc0 ATmega328.o
+ .debug_frame   0x00000bc0       0xa0 main.o
+ .debug_frame   0x00000c60       0x60 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515.o)
+ .debug_frame   0x00000cc0       0x30 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_buffer.o)
+ .debug_frame   0x00000cf0       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_get_message.o)
+ .debug_frame   0x00000d10       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_send_message.o)
+ .debug_frame   0x00000d30       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_static_filter.o)
+ .debug_frame   0x00000d50       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_write_id.o)
+ .debug_frame   0x00000d70       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_read_id.o)
+ .debug_frame   0x00000d90       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_set_mode.o)
+ .debug_frame   0x00000db0       0x30 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(spi.o)
 
-.debug_str      0x00000000      0x560
+.debug_str      0x00000000     0x27fb
  *(.debug_str)
- .debug_str     0x00000000      0x345 main.o
-                                0x37e (size before relaxing)
- .debug_str     0x00000345      0x106 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515.o)
+ .debug_str     0x00000000     0x23bb ATmega328.o
+                               0x247b (size before relaxing)
+ .debug_str     0x000023bb      0x204 main.o
+                                0x836 (size before relaxing)
+ .debug_str     0x000025bf      0x11c C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515.o)
                                 0x244 (size before relaxing)
- .debug_str     0x0000044b       0x27 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_buffer.o)
+ .debug_str     0x000026db       0x27 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_buffer.o)
                                 0x106 (size before relaxing)
- .debug_str     0x00000472       0x1b C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_get_message.o)
+ .debug_str     0x00002702       0x1b C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_get_message.o)
                                 0x113 (size before relaxing)
- .debug_str     0x0000048d       0x3c C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_send_message.o)
+ .debug_str     0x0000271d       0x34 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_send_message.o)
                                 0x16f (size before relaxing)
- .debug_str     0x000004c9       0x18 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_static_filter.o)
+ .debug_str     0x00002751       0x18 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_static_filter.o)
                                 0x10c (size before relaxing)
- .debug_str     0x000004e1       0x37 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_write_id.o)
+ .debug_str     0x00002769       0x37 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_write_id.o)
                                 0x105 (size before relaxing)
- .debug_str     0x00000518       0x28 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_read_id.o)
+ .debug_str     0x000027a0       0x28 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_read_id.o)
                                 0x109 (size before relaxing)
- .debug_str     0x00000540       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(spi.o)
+ .debug_str     0x000027c8       0x13 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_set_mode.o)
+                                0x126 (size before relaxing)
+ .debug_str     0x000027db       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(spi.o)
                                  0xe5 (size before relaxing)
 
-.debug_loc      0x00000000      0x415
+.debug_loc      0x00000000     0x1d87
  *(.debug_loc)
- .debug_loc     0x00000000       0x47 main.o
- .debug_loc     0x00000047      0x177 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515.o)
- .debug_loc     0x000001be       0x95 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_get_message.o)
- .debug_loc     0x00000253       0x95 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_send_message.o)
- .debug_loc     0x000002e8       0x79 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_static_filter.o)
- .debug_loc     0x00000361       0x28 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_write_id.o)
- .debug_loc     0x00000389       0x79 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_read_id.o)
- .debug_loc     0x00000402       0x13 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(spi.o)
+ .debug_loc     0x00000000     0x1812 ATmega328.o
+ .debug_loc     0x00001812      0x13a main.o
+ .debug_loc     0x0000194c      0x177 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515.o)
+ .debug_loc     0x00001ac3       0x95 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_get_message.o)
+ .debug_loc     0x00001b58       0x95 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_send_message.o)
+ .debug_loc     0x00001bed       0x79 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_static_filter.o)
+ .debug_loc     0x00001c66       0x28 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_write_id.o)
+ .debug_loc     0x00001c8e       0x79 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_read_id.o)
+ .debug_loc     0x00001d07       0x6d C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515_set_mode.o)
+ .debug_loc     0x00001d74       0x13 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(spi.o)
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -1048,10 +1084,11 @@ END GROUP
 .debug_pubtypes
  *(.debug_pubtypes)
 
-.debug_ranges   0x00000000       0x30
+.debug_ranges   0x00000000      0x648
  *(.debug_ranges)
- .debug_ranges  0x00000000       0x10 main.o
- .debug_ranges  0x00000010       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515.o)
+ .debug_ranges  0x00000000      0x5c0 ATmega328.o
+ .debug_ranges  0x000005c0       0x68 main.o
+ .debug_ranges  0x00000628       0x20 C:\Users\cliente\Downloads\avr-can-lib-master\avr-can-lib-master\src\libcan.a(mcp2515.o)
 
 .debug_macro
  *(.debug_macro)
