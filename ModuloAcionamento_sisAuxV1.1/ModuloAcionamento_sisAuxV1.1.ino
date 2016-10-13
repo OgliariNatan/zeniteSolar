@@ -18,8 +18,8 @@ unsigned char rxBuf[8];
 
 typedef union estados_t {
   struct {
-    unsigned char bomba1;
-    unsigned char bomba2;
+    unsigned char bomba1 :1;
+    unsigned char bomba2 :1;
     //...
   };
   unsigned char todas;

@@ -8,18 +8,34 @@
 	"buffers":
 	[
 		{
-			"file": "MA_sisAux2016/main.c",
+			"file": "/home/augusto/Documents/Shared Folders/zeniteSolar/ModuloAcionamento_sisAuxV1.1/ModuloAcionamento_sisAuxV1.1.ino",
 			"settings":
 			{
-				"buffer_size": 2875,
+				"buffer_size": 2012,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "MA_sisAux2016/mcp2515_sleep.c",
+			"file": "/home/augusto/Documents/Shared Folders/zeniteSolar/ModuloInterface_sisAux1/ModuloInterface_sisAux1.ino",
 			"settings":
 			{
-				"buffer_size": 2583,
+				"buffer_size": 1896,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/augusto/Documents/Shared Folders/zeniteSolar/ModuloAcionamento_sisAuxV1.1/CAN_BUS_Shield/mcp_can.cpp",
+			"settings":
+			{
+				"buffer_size": 32188,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/augusto/Documents/Shared Folders/zeniteSolar/ModuloInterface_sisAux1/CAN_BUS_Shield/mcp_can.h",
+			"settings":
+			{
+				"buffer_size": 6721,
 				"line_ending": "Unix"
 			}
 		}
@@ -69,10 +85,15 @@
 	},
 	"expanded_folders":
 	[
-		"/media/natan/D8E41AA4E41A8542/Users/cliente/Documents/(EngenhariaEletrônica)/ZÊNITE SOLAR/A_FAZER/Programação_canBus/meuCodigo/C/MA_sisAux2016/MA_sisAux2016"
+		"/home/augusto/Documents/Shared Folders/zeniteSolar/MA_sisAux2016___OLD/MA_sisAux2016",
+		"/home/augusto/Documents/Shared Folders/zeniteSolar/MA_sisAux2016___OLD/MA_sisAux2016/Debug"
 	],
 	"file_history":
 	[
+		"/home/augusto/Documents/Shared Folders/zeniteSolar/ModuloAcionamento_sisAuxV1.1/CAN_BUS_Shield/mcp_can.h",
+		"/home/augusto/Documents/Shared Folders/Chopper2016/Software/bibliotecas/globalDefines.h",
+		"/home/augusto/Documents/Shared Folders/Chopper2016/Software/placaAdicionalChopper.c",
+		"/home/augusto/Documents/Shared Folders/zeniteSolar/MA_sisAux2016___OLD/MA_sisAux2016/main.c",
 		"/home/natan/.config/sublime-text-3/Packages/User/SublimeLinter.sublime-settings",
 		"/media/natan/D8E41AA4E41A8542/Users/cliente/Documents/(EngenhariaEletrônica)/ZÊNITE SOLAR/A_FAZER/Programação_canBus/meuCodigo/C/MA_sisAux2016/projeto.sublime-project",
 		"/home/natan/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
@@ -80,7 +101,7 @@
 	],
 	"find":
 	{
-		"height": 34.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -94,6 +115,24 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"<<",
+			"CAN_MODE",
+			".volt",
+			"POT_BIT",
+			"POT_CHANNEL",
+			"ADC_CHANNEL_1",
+			"Pot_bit",
+			"PULL",
+			"pull",
+			"PULL",
+			"status.voltage",
+			"minVo",
+			"isBitClr",
+			"dms",
+			"dms_pin",
+			"ema",
+			"EMA",
+			"dms",
 			"linter",
 			"cpp"
 		],
@@ -118,32 +157,27 @@
 			[
 				{
 					"buffer": 0,
-					"file": "MA_sisAux2016/main.c",
+					"file": "/home/augusto/Documents/Shared Folders/zeniteSolar/ModuloAcionamento_sisAuxV1.1/ModuloAcionamento_sisAuxV1.1.ino",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2875,
+						"buffer_size": 2012,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								269,
-								269
+								1393,
+								1393
 							]
 						],
 						"settings":
 						{
-							"rulers":
-							[
-								80
-							],
-							"syntax": "Packages/C++/C.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 561.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -151,11 +185,41 @@
 				},
 				{
 					"buffer": 1,
-					"file": "MA_sisAux2016/mcp2515_sleep.c",
-					"semi_transient": true,
+					"file": "/home/augusto/Documents/Shared Folders/zeniteSolar/ModuloInterface_sisAux1/ModuloInterface_sisAux1.ino",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2583,
+						"buffer_size": 1896,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								727,
+								727
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/augusto/Documents/Shared Folders/zeniteSolar/ModuloAcionamento_sisAuxV1.1/CAN_BUS_Shield/mcp_can.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 32188,
 						"regions":
 						{
 						},
@@ -168,14 +232,45 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/C++/C.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/home/augusto/Documents/Shared Folders/zeniteSolar/ModuloInterface_sisAux1/CAN_BUS_Shield/mcp_can.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6721,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								131,
+								131
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -258,7 +353,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 283.0,
+	"side_bar_width": 260.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

@@ -20,11 +20,11 @@ unsigned char stmp[8] = {0, 0, 0, 0, 0, 0, 0, 0};
 
 typedef union estados_t{
   struct {
-    unsigned char estBomba1;
-    unsigned char estBomba2;
-    unsigned char estMPPT;
-    unsigned char estAux1;
-    unsigned char estAux2;
+    unsigned char estBomba1 : 1;
+    unsigned char estBomba2 : 1;
+    unsigned char estMPPT   : 1;
+    unsigned char estAux1   : 1;
+    unsigned char estAux2   : 1;
     };
   unsigned char todas;
 } estados_t;
