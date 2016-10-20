@@ -1,8 +1,8 @@
 /**
  * @file main.c
- * @brief MI_sisAux2016.c
+ * @brief MI_sisAux2016
  *
- * @author Natan Ogliari, Jo„o AntÙnio Cardoso
+ * @author Natan Ogliari, Jo√£o Ant√¥nio Cardoso
  *
  * @date 10/09/2016
  */
@@ -17,19 +17,21 @@
 #define F_CPU 16000000UL
 
 #define ESTADO_INICIAL 0b00000000
-#define aciBomba1	PD3			//! bot„o para ativar a bomba 1
-#define aciBomba2	PD4			//! bot„o para ativar a bomba 2
-#define aciMPPT	    PD5			//! bot„o para ativar os mppts
-#define aux1	    PD6			//! <sem funÁ„o>
-#define aux2	    PD7			//! <sem funÁ„o>
+#define aciBomba1	PD3			//! bot√£o para ativar a bomba 1
+#define aciBomba2	PD4			//! bot√£o para ativar a bomba 2
+#define aciMPPT	    PD5			//! bot√£o para ativar os mppts
+#define aux1	    PD6			//! <sem fun√ß√£o>
+#define aux2	    PD7			//! <sem fun√ß√£o>
 
-typedef union estados_t{	//< cria uma estrutura para ser enviado no pacote.
+#define MSG_START	0xFD
+
+typedef union estados_t{		//! estrutura que armazena o estado do sistema
 	struct {
-		uint8 estBomba1;		//! estado da bomba 1, ativa em alto
-		uint8 estBomba2;		//! estado da bomba 2, ativa em alto
-		uint8 estMPPT;			//! estado do mppt, ativo em alto
-		uint8 estAux1;
-		uint8 estAux2;
+		uint8 estBomba1 : 1;		//! estado da bomba 1, ativa em alto
+		uint8 estBomba2 : 1;		//! estado da bomba 2, ativa em alto
+		uint8 estMPPT   : 1;		//! estado do mppt, ativo em alto
+		uint8 estAux1   : 1;
+		uint8 estAux2   : 1;
 	};
 	uint8 all;
 } estados_t;
@@ -54,40 +56,66 @@ const uint8_t can_filter[] PROGMEM = {
 	MCP2515_FILTER(0),				// Mask 1 (for group 1)
 };
 
+/**
+ * @brief Atualiza o estado do sistema de acordo com as chaves
+ *
+ * @param *estados √© o ponteiro da vari√°vel que armazena os estados
+ */
 void updateSystemStatus(estados_t *estados)
 {
-		(*estados).estBomba1 = isBitSet(PIND, aciBomba1);
-
-		(*estados).estBomba2 = isBitSet(PIND, aciBomba2);
-		
-		(*estados).estMPPT = isBitSet(PIND, aciMPPT);
-
-		(*estados).estAux1 = isBitSet(PIND, aux1);
-
-		(*estados).estAux2 = isBitSet(PIND, aux2);
+	estados->estBomba1 = isBitSet(PIND, aciBomba1);
+	estados->estBomba2 = isBitSet(PIND, aciBomba2);
+	estados->estMPPT   = isBitSet(PIND, aciMPPT);
+	estados->estAux1   = isBitSet(PIND, aux1);
+	estados->estAux2   = isBitSet(PIND, aux2);
 }
 
+/**
+ * @brief Envia o estado do sistema via CAN
+ *
+ * @param *estados √© o ponteiro da vari√°vel que armazena os estados
+ *
+ */
 void sendSystemStatus(estados_t *estados)
 {
 	// Cria e define o tamanho do pacote
 	can_t msg;
-	msg.id = 0;
-	msg.length = 5;
-	msg.flags.rtr = 0;
-	
+	msg.id = 0x0030;			    // define o ID da mensagem
+	msg.flags.rtr = 0;				// define como um data frame
+	msg.length = 1;					// define o comprimento da mensagem
+	msg.data[0] = 0;
 
-	// Empacota os dados a serem enviados.
-	estados->all=0;
-	msg.data[0] = (*estados).estBomba1;
-	msg.data[1] = (*estados).estBomba2;
-	msg.data[2] = (*estados).estMPPT;
-	msg.data[3] = (*estados).estAux1;
-	msg.data[4] = (*estados).estAux2;
+	// Empacota os dados a serem enviados via can.
+	msg.data[0] = estados->estBomba1   << 4;
+	msg.data[0] = estados->estBomba2   << 3;
+	msg.data[0] = estados->estMPPT     << 2;
+	msg.data[0] = estados->estAux1     << 1;
+	msg.data[0] = estados->estAux2     << 0;
 
 	// Envia o pacote
 	can_send_message(&msg);
 }
 
+void sendSystemStatus2(estados_t *estados, uint8 length)
+{
+	uint8 data[length];
+
+	// Empacota os dados a serem enviados.
+	data[0] = MSG_START;
+	data[1] = estados->estBomba1;
+	data[2] = estados->estBomba2;
+	data[3] = estados->estMPPT;
+	data[4] = estados->estAux1;
+	data[5] = estados->estAux2;
+	
+	// Envia o pacote
+	for(uint8 i = 0; i<length+1; i++)
+		usartTransmit(data[i]);
+}
+
+/**
+ * @brief Configura a CAN
+ */
 void canConfig(void)
 {
 	// Initialize MCP2515
@@ -95,34 +123,52 @@ void canConfig(void)
 
 	// Load filters and masks
 	can_static_filter(can_filter);
-	
-	//can_set_filter(0, &filter0);
 
 	// Set normal mode
 	can_set_mode(NORMAL_MODE);
 }
 
-void inputsConfig(void)
+/**
+ * @brief Configura as entradas e sa√≠das
+ */
+void ioConfig(void)
 {
 	// set as input
-	DDRD &= (0 << aciBomba1) & (0 << aciBomba2) & (0 << aciMPPT) & (0 << aux1) & (0 << aux2);
+	clrBit(DDRD, aciBomba1);//!<Coloca o pino em zero "Como entrada"
+	clrBit(DDRD, aciBomba2);
+	clrBit(DDRD, aciMPPT);
+	clrBit(DDRD, aux1);
+	clrBit(DDRD, aux2);
+
 	// set pull-up
-	PORTD |= (1 << aciBomba1) & (1 << aciBomba2) & (1 << aciMPPT) & (1 << aux1) & (1 << aux2);
+	setBit(PORTD, aciBomba1);
+	setBit(PORTD, aciBomba2);
+	setBit(PORTD, aciMPPT);
+	setBit(PORTD, aux1);
+	setBit(PORTD, aux2);
 }
 
+/**
+ * @brief Configura todo o sistema
+ */
 void configSystem(void)
 {
 	// Configure CAN
 	canConfig();
 
 	// Configure USART
-	usartConfig(USART_MODE_ASYNCHRONOUS, USART_BAUD_9600, USART_DATA_BITS_8, USART_PARITY_NONE, USART_STOP_BIT_SINGLE);
-	usartEnableTransmitter();
+	//usartConfig(USART_MODE_ASYNCHRONOUS, USART_BAUD_9600, USART_DATA_BITS_8, USART_PARITY_NONE, USART_STOP_BIT_SINGLE);
+	//usartEnableTransmitter();
+	//usartEnableReceiver();
+	//usartStdio();
 
-	// Configure inputs
-	inputsConfig();
+	// Configure inputs and outputs
+	ioConfig();
 }
 
+/**
+ * @brief Programa principal
+ */
 int main(void)
 {
 	// Configure system
@@ -133,17 +179,20 @@ int main(void)
 	estados.all = ESTADO_INICIAL;
 
 	// main loop: reads a message and sends it via USART
-	for(;;){
+	can_t received_msg;
+	while (1)
+	{
 
 		// Checks if a new message was received
 		if (can_check_message()){
-			can_t received_msg;
+			
 
 			// Try to read the message
-			if(can_get_message(&received_msg))
-				// Sends via USART
+			if(can_get_message(&received_msg));
+
+				/*// Sends via USART
 				for(uint8 i=0; i<received_msg.length ;i++)
-					usartTransmit(received_msg.data[i]);
+					usartTransmit(received_msg.data[i]);*/
 		}
 
 		// Updates system status
@@ -151,7 +200,7 @@ int main(void)
 
 		// Sends system status via CAN
 		sendSystemStatus(&estados);
+		_delay_ms(500);
 
 	}
 }
-
