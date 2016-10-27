@@ -71,7 +71,7 @@ void canConfig(void)
 	can_set_mode(NORMAL_MODE);
 }
 
-/**
+/*
  * @brief Configura USART
  *
 void usartSetup(void)
@@ -133,6 +133,8 @@ void updateOutputs(estados_t *estados)
 	if( estados->Bomba1 ) setBit(PORT_BOMBA1, BOMBA1);
 	else clrBit(PORT_BOMBA1, BOMBA1);
 
+	//ATUALIZA_BOMBA1();
+
 	if( estados->Bomba2 ) setBit(PORT_BOMBA2, BOMBA2);
 	else clrBit(PORT_BOMBA2, BOMBA2);
 }
@@ -159,10 +161,10 @@ int main(void)
 			// Try to read the message
 			if(can_get_message(&received_msg)){
 								
-				if ( 0x0030 == received_msg.id){
+				if ( 0x000 == received_msg.id){
 					
-					estados.Bomba1 = received_msg.data[0] | 1<<4; //000A B000
-					estados.Bomba2 = received_msg.data[0] | 1<<3;
+					estados.Bomba1  = received_msg.data[0] << 4; //000A B000
+					estados.Bomba2 |= received_msg.data[0] << 3;
 					updateOutputs(&estados);
 				}
 			
