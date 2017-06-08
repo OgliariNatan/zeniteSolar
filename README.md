@@ -3,4 +3,4 @@
 Códigos para a equipe Zênite solar do IFSC - câmpus Florianópolis. <br />
 Baseado no protocolo can bus, para um barco movido a energia solar. <br />
 </p>
-<a href="fb.com/zenitesolar">Zênite Solar.</a> <br />
+<a href="https://www.facebook.com/zenitesolar">Zênite Solar.</a> <br />
